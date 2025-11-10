@@ -1,6 +1,6 @@
-# Invitación de Bautizo Digital - Yaretzi
+# Invitación de Primera Comunión Digital - Annia
 
-Este proyecto es una invitación de bautizo interactiva y visualmente atractiva, presentada como una página web estática. Simula la apertura de un sobre para revelar detalles importantes de la ceremonia y ofrece información adicional a través de modales interactivos.
+Este proyecto es una invitación de Primera Comunión  interactiva y visualmente atractiva, presentada como una página web estática. Simula la apertura de un sobre para revelar detalles importantes de la ceremonia y ofrece información adicional a través de modales interactivos.
 
 ## ✨ Características Principales
 
@@ -25,8 +25,7 @@ Este proyecto es una invitación de bautizo interactiva y visualmente atractiva,
 
 (Aquí iría una imagen de la invitación o una captura de pantalla. Si tienes una imagen, puedes añadirla con: `![Captura de Pantalla de la Invitación](ruta/a/tu/imagen.png)`)
 
-![Ejemplo visual](https://via.placeholder.com/400x600/e6e6fa/ffffff?text=Invitación+Bautizo+Yaretzi+Mockup)
-*(Imagen de marcador de posición - reemplázala con una captura real de tu proyecto)*
+<img width="1666" height="924" alt="image" src="https://github.com/user-attachments/assets/ccda110b-7f08-47e1-b8c8-4221b2dfa4ca" />
 
 ## 🎨 Paleta de Colores
 
@@ -43,13 +42,6 @@ Este proyecto es una invitación de bautizo interactiva y visualmente atractiva,
     *   Color de fondo del sobre y la tarjeta: `#FDFBF5`
     *   Colores del sobre: `#e9e4d9` (trasero), `#f7f2e9` (frontal)
 
-## ⬆️ Cómo Usarlo
-
-Este es un proyecto frontend autónomo. Puedes verlo abriendo el archivo `index.html` (o como hayas nombrado tu archivo principal) directamente en tu navegador web. No requiere ninguna instalación ni configuración adicional.
-
-1.  Clona el repositorio:
-    ```bash
-    git clone [URL de tu repositorio]
     ```
 2.  Abre el archivo `index.html` en tu navegador.
 
