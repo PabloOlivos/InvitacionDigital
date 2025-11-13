@@ -18,7 +18,7 @@
             --color-pink: #e6e6fa;
             /* Lavender */
             --color-gray: #6d6e71;
-            --color-gold: #9379d8;
+            --color-gold: #D9B573;
             /* Slate Blue/Purple - keeping original for reference/fallback */
             --envelope-back-color: hsl(39, 78%, 81%);
             --envelope-front-color: #F2E1AE;
@@ -53,7 +53,7 @@
             /* Subtle lavender to pink smoky gradient */
             --dark-text-color: #333333;
             /* Dark grey for body text */
-            --divider-pink-purple-color: #da70d6;
+            --divider-pink-purple-color: #73551F;
             /* Pink-purple for the divider */
         }
 
@@ -324,7 +324,7 @@
 
         .invitation-card:hover .name {
             transform: scale(1.05);
-            background: var(--pink-purple-gradient);
+            background: #73551F;
             -webkit-background-clip: text;
             background-clip: text;
             filter: drop-shadow(0 2px 4px rgba(147, 121, 216, 0.3));
@@ -370,7 +370,7 @@
 
         .invitation-card:hover .main-event {
             transform: scale(1.03);
-            background: var(--pink-purple-gradient);
+            background: #A67F38;
             -webkit-background-clip: text;
             background-clip: text;
             filter: drop-shadow(0 2px 4px rgba(147, 121, 216, 0.3));
@@ -417,7 +417,7 @@
 
         .invitation-card:hover .details .date {
             transform: scale(1.02);
-            color: #ba55d3;
+            color: #A67F38;
             filter: drop-shadow(0 1px 2px rgba(186, 85, 211, 0.2));
         }
 
@@ -436,7 +436,7 @@
         .invitation-card:hover .details .time,
         .invitation-card:hover .details .address {
             transform: scale(1.01);
-            color: #9370db;
+            color: #A67F38;
             filter: drop-shadow(0 1px 2px rgba(147, 112, 219, 0.2));
         }
 
@@ -453,7 +453,7 @@
 
         .invitation-card:hover .details .location-name {
             transform: scale(1.02);
-            color: #9379d8;
+            color: #73551F;
             filter: drop-shadow(0 1px 2px rgba(147, 121, 216, 0.2));
         }
 
@@ -462,20 +462,20 @@
         }
 
         .godparents-title {
-            font-family: var(--font-serif-caps);
-            color: var(--color-gray);
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 5px;
+            font-family: var(--font-cursive);
+            font-size: 26px;
+            margin: 10px 0 3px 0;
+            color: #D9B573;
+            /* Previous color, will be overridden */
+            letter-spacing: normal;
             transition: all 0.3s ease;
             display: inline-block;
         }
 
         .invitation-card:hover .godparents-title {
             transform: scale(1.02);
-            color: #da70d6;
-            filter: drop-shadow(0 1px 2px rgba(218, 112, 214, 0.2));
+            color: #A67F38;
+            filter: drop-shadow(0 1px 2px rgba(218, 209, 112, 0.2));
         }
 
         /* Barra de Navegación dentro de la tarjeta */
@@ -922,14 +922,14 @@
             .godparents-section p,
             .details .location-name {
                 /* Applied to all body text elements */
-                color: var(--dark-text-color);
+                
                 /* Dark grey */
             }
 
-            /* --- Divider color update for consistency with pink-purple theme --- */
+            /* --- Divider color update for consistency with pink-purple theme 
             .divider {
                 background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20" fill="%23da70d6"%3E%3Cpath d="M0 10 H 80 C 85 10, 85 5, 90 5 S 95 10, 100 10 S 105 5, 110 5 S 115 10, 120 10 H 200 M 95 10 L 100 14 L 105 10 L 100 6 Z" stroke="%23da70d6" stroke-width="1.5"/%3E%3C/svg%3E');
-            }
+            }--- */
 
             /* The corner elements have their fill colors defined inline in their SVG, which is not easily overridden by CSS variables here.
        They will retain their original coloring unless modified directly in their SVG definitions. */
@@ -1019,7 +1019,7 @@
             height: 90px;
             object-fit: cover;
             border-radius: 50%;
-            border: 4px solid #da70d6;
+            border: 4px solid #73551F;
             /* Borde rosa púrpura sólido para forma circular */
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
             background: #fff;
@@ -1219,7 +1219,7 @@
             }
 
             .divider {
-                background: var(--pink-purple-gradient) !important;
+                background: #73551F !important;
                 background-image: none !important;
                 height: 2px !important;
                 width: 60% !important;
@@ -1650,11 +1650,11 @@
                 <div class="divider"></div>
                 <div class="details ceremony">
                     <p class="date">DOMINGO 30 DE NOVIEMBRE</p>
-                    <p class="time">| MISA A LAS 12PM</p>
+                    <p class="time">| MISA A LAS 12:00 HRS</p>
                     <p class="location-name">Parroquia de San Martín de Porres</p>
                 </div>
                 <div class="godparents-section">
-                    <p class="godparents-title">Sus Papás</p> 
+                    <p class="godparents-title">Padres</p> 
                     <p style="margin: 0px;">Mónica Cecilia Hernández Salinas </p>
                     <p style="margin: 0px;">Alberto Gaviña Ramírez </p>
                 </div>
@@ -1678,10 +1678,7 @@
                         <span class="material-icons">celebration</span>
                         <span>Fiesta</span>
                     </button>
-                    <button class="nav-button" data-modal-target="#gifts-modal">
-                        <span class="material-icons">card_giftcard</span>
-                        <span>Regalos</span>
-                    </button>
+                    
                 </nav>
             </div>
         </div>
@@ -1729,7 +1726,7 @@
     <b>croquis adjunto</b> o acceder directamente a la ubicación en 
     <a href="https://maps.app.goo.gl/A1pYqzNy6cGf14rj8" target="_blank" style="color:#1976d2; text-decoration:none;"><b>Google Maps</b></a>.<br><br>
     El <b>estacionamiento</b> se encuentra en la calle. <b>Te sugerimos llegar con anticipación</b> para asegurar tu lugar y disfrutar de una llegada 
-    <i>sin contratiempos</i> 🚗💒<br><br>
+    <i>sin contratiempos</i><br>
     Si tienes alguna pregunta el día del evento, <b>no dudes en consultarnos</b>.
 </p>
 
@@ -1745,19 +1742,7 @@
         </div>
     </div>
 
-    <!-- Modal de Regalos -->
-    <div class="modal-overlay" id="gifts-modal">
-        <div class="modal-content">
-            <button class="modal-close" data-close-button>&times;</button>
-<h3>🎁 Mesa de Regalos</h3>
-<p>
-    <b>Tu presencia</b> es el <i>mejor regalo</i> que podemos recibir en este día tan especial 💖<br><br>
-    Si deseas tener un detalle con <b>Annia</b>, le harás vivir una alegría <b>inmensa</b> y llenará su corazón de <i>gratitud</i>.<br><br>
-    Cada obsequio será una muestra de <b>cariño</b> que recordará con mucho amor, y nosotros agradecemos de todo corazón tu hermosa <b><i>generosidad</i></b> 🌷
-</p>
-        </div>
-    </div>
-
+    
     <!-- Modal de Fiesta -->
     <div class="modal-overlay" id="party-modal">
         <div class="modal-content">
@@ -1765,10 +1750,10 @@
             <h3>Dirección de la Fiesta</h3>
             <p
     style="font-family: 'Lato', sans-serif; color: #6d6e71; font-size: 14px; text-align: justify; max-width: 420px; margin: 0 auto;">
-    Después de la <b>ceremonia religiosa</b>, ¡prepárate para continuar la celebración! 🎉💃<br><br>
-    Te esperamos a las <b>13:30 hrs 🕜</b> en el <b>Salón Rose Mary</b> 🌹, ubicado en 
+    Después de la <b>ceremonia religiosa</b>, ¡prepárate para continuar la celebración! <br><br>
+    Te esperamos a las <b>13:30 hrs 🕜</b> en el <b>Salón Rose Mary</b> , ubicado en 
     <i>C. Pablo García 479, Juan Escutia, Iztapalapa, 09100 Ciudad de México, CDMX</i>.<br><br>
-    El salón cuenta con <b>estacionamiento disponible</b> para tu comodidad 🚗<br><br>
+    
     Puedes consultar la ubicación en 
     <a href="https://maps.app.goo.gl/YXdwq8YWry6dG4Xb9" target="_blank" style="color:#1976d2; text-decoration:none;"><b>Google Maps</b></a> 
     para facilitar tu llegada.<br>
