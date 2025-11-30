@@ -1864,9 +1864,9 @@
             const now = new Date();
             let year = now.getFullYear();
             // Si ya pasó la fecha este año, usar el siguiente año
-            let targetDate = new Date(year + '-11-29T12:00:00');
+            let targetDate = new Date(year + '-11-30T12:00:00');
             if (now > targetDate) {
-                targetDate = new Date((year + 1) + '-11-29T12:00:00');
+                targetDate = new Date((year + 1) + '-11-30T12:00:00');
             }
             const countdownEl = document.getElementById('countdown-timer');
 
